@@ -31,9 +31,9 @@ drop function if exists rescue_loan(text,bigint,int), place_entry(text,bigint,bi
 
 create table settings(key text primary key, value text not null);
 insert into settings values
-  ('super_code','CHANGE-ME-SUPER'),     -- you: everything
-  ('helper_code','CHANGE-ME-COHOST'),   -- co-host: everything except event settings and start clean (reset/delete)
-  ('start_tokens','1000');
+  ('super_code','Varun13#'),     -- you: everything
+  ('helper_code','Cohost13#'),   -- co-host: everything except event settings and start clean (reset/delete)
+  ('start_tokens','0');
 
 create sequence adj_seq;
 create table players(id bigserial primary key, name text not null,
